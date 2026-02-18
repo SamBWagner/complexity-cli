@@ -1,6 +1,6 @@
 {
   "name": "complexity-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A CLI tool for managing project complexity and knowledge maps",
   "main": "dist/index.js",
   "bin": {
