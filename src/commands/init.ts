@@ -3,8 +3,7 @@ import * as path from 'path';
 import chalk from 'chalk';
 import { promptForInput } from '../utils/prompts';
 import { exitWithError } from '../utils/error-helpers';
-
-const TEMPLATE_FILE = path.join(__dirname, '../../Complexity.template.md');
+const TEMPLATE_FILE = path.join(__dirname, '../Complexity.template.md');
 const OUTPUT_FILE = 'COMPLEXITY.md';
 
 function getOutputPath(): string {

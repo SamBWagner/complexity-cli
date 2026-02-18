@@ -2,13 +2,16 @@
   "name": "complexity-cli",
   "version": "1.0.1",
   "description": "A CLI tool for managing project complexity and knowledge maps",
+  "type": "module",
   "main": "dist/index.js",
   "bin": {
     "complexity": "dist/index.js"
   },
   "scripts": {
-    "build": "tsc",
-    "dev": "tsc --watch",
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "typecheck": "tsc --noEmit",
+    "link": "npm run build && npm link",
     "prepublishOnly": "npm run build"
   },
   "keywords": [
@@ -37,13 +40,14 @@
     "LICENSE"
   ],
   "dependencies": {
+    "chalk": "^4.1.2",
     "commander": "^12.0.0",
-    "inquirer": "^9.2.0",
-    "chalk": "^4.1.2"
+    "inquirer": "^9.2.0"
   },
   "devDependencies": {
-    "@types/node": "^20.0.0",
     "@types/inquirer": "^9.0.0",
+    "@types/node": "^20.0.0",
+    "tsup": "^8.5.1",
     "typescript": "^5.3.0"
   },
   "engines": {
